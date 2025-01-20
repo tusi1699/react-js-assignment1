@@ -1,0 +1,9 @@
+<!-- Why is this.setState() used in class components, and how does it work -->
+
+use the setState() method to change the state object 
+it will ensure that the component knows its been updated
+and calls the render() method (and all the other lifecycle methods).
+In class components, this.setState is used to update the component's state. 
+ React schedules a re-render of the component whenever the state is updated.
+
+ this.setState({ key: newValue });
