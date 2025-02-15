@@ -1,0 +1,26 @@
+What is conditional rendering in React?
+ How can you conditionally render elements in a React component?
+
+
+ Conditional rendering in React is the process of displaying different UI elements or 
+ components based on certain conditions or state
+
+ 1.Ternary Operator:
+
+ {condition ? <ElementA /> : <ElementB />}
+
+ 2.Logical AND (&&):
+
+ {condition && <Element />}
+
+ 3.if Statements in Render Function:
+ 
+ let content;
+if (condition) {
+  content = <ElementA />;
+} else {
+  content = <ElementB />;
+}
+return content;
+
+ 

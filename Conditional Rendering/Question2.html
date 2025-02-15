@@ -1,0 +1,25 @@
+Explain how if-else, ternary operators, and && (logical AND) are used in JSXfor
+conditional rendering.
+
+For simple conditions where you want to render a component based on a single boolean expression, 
+the && operator might be more concise
+
+1.If-Else:
+
+let content;
+if (condition) {
+    content = <ComponentA />;
+} else {
+    content = <ComponentB />;
+}
+return content;
+
+2.Ternary Operator (? :):
+Use this inline for concise conditional rendering.
+
+return condition ? <ComponentA /> : <ComponentB />;
+
+3.Logical AND (&&):
+Use it for rendering something only if the condition is true
+
+return condition && <ComponentA />;

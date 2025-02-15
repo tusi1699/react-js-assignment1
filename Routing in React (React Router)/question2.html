@@ -1,0 +1,20 @@
+<!-- Explain the difference between BrowserRouter, Route, Link, and Switch
+components in React Router. -->
+
+BrowserRouter:
+The top-level component that wraps your entire application and enables client-side routing by managing the URL history. 
+You typically only need one "BrowserRouter" per application. 
+
+Route:
+Defines a single route with a specific path and the component to render when that path is accessed. 
+Each "Route" is nested within the "BrowserRouter". 
+Key attribute: "path" which specifies the URL pattern to match. 
+
+Link:
+A clickable component that generates a link to navigate to a different route within your application. 
+When clicked, it updates the URL in the browser without a full page reload. 
+Key attribute: "to" which specifies the target path to navigate to. 
+
+Switch: 
+A component that only renders the first matching "Route" from its children when multiple routes might match the current URL. 
+Useful for preventing unintended rendering of multiple components when routes overlap. 
